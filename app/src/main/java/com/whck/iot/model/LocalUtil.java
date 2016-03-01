@@ -1,4 +1,4 @@
-package com.whck.iot.model.util;
+package com.whck.iot.model;
 
 import android.content.SharedPreferences;
 
