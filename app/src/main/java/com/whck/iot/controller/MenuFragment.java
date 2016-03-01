@@ -64,11 +64,8 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
                 getFragmentManager().beginTransaction().replace(R.id.main_container, fragment3).commit();
                 break;
             case R.id.btn4:
-                Bundle arguments4 = new Bundle();
-                arguments4.putString(HomeFragment.LABEL, btn4.getText().toString());
-                HomeFragment fragment4 = new HomeFragment();
-                fragment4.setArguments(arguments4);
-                getFragmentManager().beginTransaction().replace(R.id.main_container, fragment4).commit();
+                LoginFragment loginFragment=new LoginFragment();
+                getFragmentManager().beginTransaction().replace(R.id.main_container, loginFragment).commit();
                 break;
         }
     }
