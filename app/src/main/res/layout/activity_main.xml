@@ -7,7 +7,7 @@
 
     <FrameLayout
         android:layout_width="500dp"
-        android:layout_height="450dp" android:id="@+id/main_container"></FrameLayout>
+        android:layout_height="470dp" android:id="@+id/main_container"></FrameLayout>
 
     <fragment
         android:id="@+id/main_menus"
