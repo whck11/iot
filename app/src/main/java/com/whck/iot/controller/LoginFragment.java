@@ -66,8 +66,9 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                     LocalUtil.EDITOR.putString("username", (String) user.get("username"));
                     LocalUtil.EDITOR.putInt("id", (Integer) user.get("id"));
                     LocalUtil.EDITOR.putString("name", (String) user.get("name"));
+                    LocalUtil.EDITOR.commit();
                     String name=LocalUtil.PREFERENCES.getString("name","存储失败");
-                    Toast.makeText(getActivity(), name, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "登陆成功"+name, Toast.LENGTH_SHORT).show();
                     break;
             }
         }
